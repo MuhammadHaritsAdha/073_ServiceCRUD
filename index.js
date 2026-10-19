@@ -6,7 +6,9 @@ const port = 3000;
 const { Pool } = pg;
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+    extended:  true, 
+}));
 
 const pool = new Pool({
     user: "postgres",
