@@ -11,3 +11,8 @@ Test POST
 Test PUT
 
 <img width="481" height="337" alt="Screenshot 2026-10-19 105748" src="https://github.com/user-attachments/assets/e0cb0a3f-bc9f-4241-85bd-a15c5a38738b" />
+
+
+Test DELETE
+
+<img width="481" height="340" alt="Screenshot 2026-10-19 105809" src="https://github.com/user-attachments/assets/9ab1423a-bd01-4fa7-922f-062912e533ea" />
