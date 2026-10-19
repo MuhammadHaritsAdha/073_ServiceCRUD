@@ -16,6 +16,20 @@ const pool = new Pool({
     port: 5432,
 });
 
+// GET all data
+app.get('/', async (req, res) => {
+    console.log("TEST DATA :");
+
+    pool.query('SELECT * FROM biodata ORDER BY id')
+    .then(result => {
+        res.send(result.rows);
+    })
+    .catch(error => {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    });
+});
+
 app.listen(port, () => {
     console.log(`App running on port ${port}`);
 });
